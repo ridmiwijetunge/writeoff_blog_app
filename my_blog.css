@@ -1,0 +1,84 @@
+.blog-list {
+  margin: 60px auto;
+  max-width: 920px;
+  padding: 0 20px;
+}
+
+.blog-list h2 {
+  font-size: 30px;
+  color: #1e3a8a;
+  margin-bottom: 24px;
+  border-left: 6px solid #60a5fa;
+  padding-left: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Blog card */
+.blog-card {
+  background: linear-gradient(135deg, #fefefe, #f0f9ff);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+  border-left: 8px solid #60a5fa;
+  position: relative;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+  border-left-color: #2563eb;
+}
+
+.blog-card h3 {
+  color: #1e3a8a;
+  font-size: 23px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.blog-card p {
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  font-size: 1.05em;
+}
+
+.blog-card small {
+  color: #555;
+  font-size: 13px;
+}
+
+/* Buttons */
+.blog-card a.btn-primary,
+.blog-card a.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.blog-card a.btn-primary {
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+  color: #fff;
+}
+
+.blog-card a.btn-primary:hover {
+  background: linear-gradient(90deg, #1e40af, #3b82f6);
+  transform: scale(1.05);
+}
+
+.blog-card a.btn {
+  background: linear-gradient(90deg, #60a5fa, #93c5fd);
+  color: #1e3a8a;
+  margin-left: 8px;
+}
+
+.blog-card a.btn:hover {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  transform: scale(1.05);
+}

@@ -1,0 +1,140 @@
+/* ===========================
+   Edit Blog Page Styles
+=========================== */
+
+/* Card for the edit form */
+.edit-blog-card {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #e0f2fe; /* light blue background */
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: center; /* center all content inside the card */
+}
+
+.edit-blog-card h2 {
+    color: #1e3a8a; /* dark blue heading */
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Form fields */
+.edit-blog-card label {
+    font-weight: 500;
+    margin: 12px 0 6px;
+    display: block;
+    text-align: left; /* keep labels left aligned */
+}
+
+.edit-blog-card input[type="text"],
+.edit-blog-card textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.edit-blog-card input[type="text"]:focus,
+.edit-blog-card textarea:focus {
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 4px rgba(245,158,11,0.2);
+    outline: none;
+}
+
+/* Buttons */
+.edit-blog-card .form-actions {
+    display: flex;
+    justify-content: center; /* center the buttons */
+    gap: 14px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.edit-blog-card .form-actions .btn {
+    padding: 12px 24px;
+    background: #60a5fa;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.edit-blog-card .form-actions .btn:hover {
+    background: #1e3a8a;
+    transform: translateY(-2px) scale(1.05);
+}
+
+.edit-blog-card .form-actions .btn-red {
+    background: linear-gradient(90deg, #f87171, #dc2626);
+    color: #fff;
+}
+
+.edit-blog-card .form-actions .btn-red:hover {
+    background: linear-gradient(90deg, #b91c1c, #991b1b);
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* EasyMDE editor adjustments */
+.CodeMirror, .EasyMDEContainer {
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    min-height: 300px;
+    transition: all 0.3s ease;
+}
+
+.CodeMirror-focused {
+    outline: none;
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 4px rgba(245,158,11,0.2);
+}
+
+/* Toolbar styling */
+.editor-toolbar {
+    background: #f9fafb;
+    border-bottom: 1px solid #ccc;
+    border-radius: 12px 12px 0 0;
+}
+
+.editor-toolbar button {
+    color: #1e3a8a;
+    background: transparent;
+    border: none;
+    margin: 0 2px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.editor-toolbar button:hover {
+    color: #2563eb;
+}
+
+/* Editor preview */
+.editor-preview-side, .editor-preview {
+    background: #fff;
+    border-radius: 0 0 12px 12px;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .edit-blog-card {
+        padding: 30px 20px;
+    }
+    .edit-blog-card h2 {
+        font-size: 24px;
+    }
+}

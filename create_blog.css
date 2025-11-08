@@ -1,0 +1,118 @@
+/* ===========================
+   Create Blog Page Styles
+=========================== */
+
+/* Body background */
+body.create-blog-page {
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe); /* soft blue gradient */
+}
+
+/* Form container */
+.single-blog {
+    max-width: 700px;
+    margin: 60px auto;
+    background: linear-gradient(145deg, #e0f2fe, #bae6fd); /* light blue gradient */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    color: #1e3a8a; /* dark blue text */
+}
+
+/* Form heading */
+.single-blog h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e40af;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+.single-blog label {
+    display: block;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #1e3a8a;
+}
+
+/* Input fields */
+.single-blog input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #60a5fa;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Input focus */
+.single-blog input[type="text"]:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3);
+    outline: none;
+}
+
+/* Textarea (EasyMDE editor) */
+.single-blog textarea {
+    width: 100%;
+    min-height: 250px;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #60a5fa;
+    background-color: #e0f2fe;
+    font-size: 15px;
+    color: #1e3a8a;
+    transition: all 0.3s ease;
+}
+
+/* Textarea focus */
+.single-blog textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3);
+    outline: none;
+}
+
+/* Buttons */
+.single-blog .form-actions .btn-primary {
+    background: #2563eb;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.single-blog .form-actions .btn-primary:hover {
+    background: #1e40af;
+    transform: scale(1.05);
+}
+
+.single-blog .form-actions .btn-red {
+    background: #facc15;
+    color: #1e3a8a;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.single-blog .form-actions .btn-red:hover {
+    background: #eab308;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* EasyMDE adjustments */
+.editor-toolbar {
+    background-color: #bfdbfe !important;
+    border-radius: 8px 8px 0 0 !important;
+}
+.CodeMirror {
+    background-color: #e0f2fe !important;
+    color: #1e3a8a !important;
+    border-radius: 0 0 8px 8px;
+}
